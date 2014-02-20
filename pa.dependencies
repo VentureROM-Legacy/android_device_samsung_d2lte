@@ -1,5 +1,9 @@
 [
     {
+        "repository":   "android_device_samsung_d2lte",
+        "target_path":  "device/samsung/d2lte"
+    },
+    {
         "remote":       "cm",
         "repository":   "CyanogenMod/android_kernel_samsung_d2",
         "target_path":  "kernel/samsung/d2",

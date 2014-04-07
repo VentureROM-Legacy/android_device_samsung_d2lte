@@ -64,6 +64,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
        device/samsung/d2lte/media/media_profiles.xml:system/etc/media_profiles.xml
 
+#Netflix fix
+PRODUCT_COPY_FILES += \
+       device/samsung/d2lte/prebuilt/etc/init.d/98netflix:/system/etc/init.d/98netflix
+
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \

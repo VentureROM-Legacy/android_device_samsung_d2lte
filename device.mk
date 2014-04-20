@@ -66,7 +66,12 @@ PRODUCT_COPY_FILES += \
 
 #Netflix fix
 PRODUCT_COPY_FILES += \
-       device/samsung/d2lte/prebuilt/etc/init.d/98netflix:/system/etc/init.d/98netflix
+       device/samsung/d2lte/prebuilt/etc/init.d/98netflix:system/etc/init.d/98netflix
+
+# Hal
+PRODUCT_COPY_FILES += \
+       device/samsung/d2lte/camera/camera.MSM8960.so:system/lib/hw/camera.MSM8960.so
+
 
 
 # Ramdisk

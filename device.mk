@@ -69,10 +69,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
        device/samsung/d2lte/media/media_profiles.xml:system/etc/media_profiles.xml
 
-# Hal
-PRODUCT_COPY_FILES += \
-       device/samsung/d2lte/camera/camera.MSM8960.so:system/lib/hw/camera.MSM8960.so
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \

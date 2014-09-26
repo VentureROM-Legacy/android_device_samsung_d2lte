@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
 ## Get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/d2lte/d2lte-vendor.mk)
 

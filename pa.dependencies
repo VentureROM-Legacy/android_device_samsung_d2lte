@@ -28,7 +28,7 @@
         "revision":     "cm-11.0"
     },
     {
-        "remote":       "cm",
+        "remote":       "github",
         "repository":   "AOSPA-legacy/android_device_samsung_qcom-common",
         "target_path":  "device/samsung/qcom-common",
         "revision":     "kitkat"

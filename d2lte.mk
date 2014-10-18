@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
 ## Get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/d2lte/d2lte-vendor.mk)
 
@@ -33,6 +35,17 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 PRODUCT_COPY_FILES += \
     device/samsung/d2lte/audio/snd_soc_msm_2x:system/etc/snd_soc_msm/snd_soc_msm_2x \
     device/samsung/d2lte/audio/audio_policy.conf:system/etc/audio_policy.conf
+
+# GPS
+PRODUCT_PACKAGES += \
+    gps.msm8960 \
+    libgps.utils \
+    libloc_core \
+    libloc_eng
+
+PRODUCT_COPY_FILES += \
+    device/samsung/d2lte/gps/etc/gps.conf:system/etc/gps.conf \
+    device/samsung/d2lte/gps/etc/sap.conf:system/etc/sap.conf
 
 # Keylayout
 PRODUCT_COPY_FILES += \
